@@ -12,33 +12,35 @@ import CoreLocation
 
 
 struct MapView: UIViewRepresentable {
-    var controller = MapViewController()
+    @ObservedObject var locationManager = LocationManager()
     
-    
-    func makeUIView(context: UIViewRepresentableContext<MapView>) ->
-        MKMapView {
-            return controller.mapView
+    var userLatitude: String {
+        return "\(locationManager.lastLocation?.coordinate.latitude ?? 0)"
+    }
+
+    var userLongitude: String {
+        return "\(locationManager.lastLocation?.coordinate.longitude ?? 0)"
     }
     
-    func updateUIView(_ uiView: MKMapView, context: Context) {
+    func makeUIView(context: Context) ->
+        MKMapView {
+            self.locationManager.startUpdating()
+            return MKMapView(frame: .zero)
+    }
+    
+    func updateUIView(_ view: MKMapView, context: Context) {
         
-        if (controller.isViewLoaded == false) {
-            return
+        if (locationManager.location != nil) {
+            print("here")
+            let coordinate: CLLocationCoordinate2D = locationManager.location!.coordinate
+                   
+            view.mapType = MKMapType.standard
+           
+            let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta:0.02)
+            let region = MKCoordinateRegion(center: coordinate, span: span)
+            view.setRegion(region, animated: true)
         }
-        
-        while (controller.getLocationManger().location == nil) {
-            print("sleep")
-            sleep(1)
-        }
-        
-        
-        let coordinate: CLLocationCoordinate2D = controller.getLocationManger().location!.coordinate
-        
-        controller.mapView.mapType = MKMapType.standard
-        
-        let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta:0.02)
-        let region = MKCoordinateRegion(center: coordinate, span: span)
-        controller.mapView.setRegion(region, animated: true)
+       
     }
     
 }

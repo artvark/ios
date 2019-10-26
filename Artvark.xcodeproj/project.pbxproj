@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BC43E482363CF020014F526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E472363CF020014F526 /* AppDelegate.swift */; };
+		7BC43E4A2363CF020014F526 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E492363CF020014F526 /* ContentView.swift */; };
+		7BC43E4C2363CF020014F526 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E4B2363CF020014F526 /* Experience.rcproject */; };
+		7BC43E4E2363CF060014F526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC43E4D2363CF060014F526 /* Assets.xcassets */; };
+		7BC43E512363CF060014F526 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC43E502363CF060014F526 /* Preview Assets.xcassets */; };
+		7BC43E542363CF060014F526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC43E522363CF060014F526 /* LaunchScreen.storyboard */; };
+		7BC43E5F2363CF060014F526 /* ArtvarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E5E2363CF060014F526 /* ArtvarkTests.swift */; };
+		7BC43E6A2363CF060014F526 /* ArtvarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E692363CF060014F526 /* ArtvarkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BC43E5B2363CF060014F526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BC43E3C2363CF020014F526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC43E432363CF020014F526;
+			remoteInfo = Artvark;
+		};
+		7BC43E662363CF060014F526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BC43E3C2363CF020014F526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC43E432363CF020014F526;
+			remoteInfo = Artvark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BC43E442363CF020014F526 /* Artvark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artvark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC43E472363CF020014F526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BC43E492363CF020014F526 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BC43E4B2363CF020014F526 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		7BC43E4D2363CF060014F526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BC43E502363CF060014F526 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BC43E532363CF060014F526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BC43E552363CF060014F526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC43E5A2363CF060014F526 /* ArtvarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtvarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC43E5E2363CF060014F526 /* ArtvarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtvarkTests.swift; sourceTree = "<group>"; };
+		7BC43E602363CF060014F526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC43E652363CF060014F526 /* ArtvarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtvarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC43E692363CF060014F526 /* ArtvarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtvarkUITests.swift; sourceTree = "<group>"; };
+		7BC43E6B2363CF060014F526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BC43E412363CF020014F526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC43E572363CF060014F526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC43E622363CF060014F526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BC43E3B2363CF020014F526 = {
+			isa = PBXGroup;
+			children = (
+				7BC43E462363CF020014F526 /* Artvark */,
+				7BC43E5D2363CF060014F526 /* ArtvarkTests */,
+				7BC43E682363CF060014F526 /* ArtvarkUITests */,
+				7BC43E452363CF020014F526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BC43E452363CF020014F526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BC43E442363CF020014F526 /* Artvark.app */,
+				7BC43E5A2363CF060014F526 /* ArtvarkTests.xctest */,
+				7BC43E652363CF060014F526 /* ArtvarkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BC43E462363CF020014F526 /* Artvark */ = {
+			isa = PBXGroup;
+			children = (
+				7BC43E472363CF020014F526 /* AppDelegate.swift */,
+				7BC43E492363CF020014F526 /* ContentView.swift */,
+				7BC43E4B2363CF020014F526 /* Experience.rcproject */,
+				7BC43E4D2363CF060014F526 /* Assets.xcassets */,
+				7BC43E522363CF060014F526 /* LaunchScreen.storyboard */,
+				7BC43E552363CF060014F526 /* Info.plist */,
+				7BC43E4F2363CF060014F526 /* Preview Content */,
+			);
+			path = Artvark;
+			sourceTree = "<group>";
+		};
+		7BC43E4F2363CF060014F526 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7BC43E502363CF060014F526 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BC43E5D2363CF060014F526 /* ArtvarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BC43E5E2363CF060014F526 /* ArtvarkTests.swift */,
+				7BC43E602363CF060014F526 /* Info.plist */,
+			);
+			path = ArtvarkTests;
+			sourceTree = "<group>";
+		};
+		7BC43E682363CF060014F526 /* ArtvarkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BC43E692363CF060014F526 /* ArtvarkUITests.swift */,
+				7BC43E6B2363CF060014F526 /* Info.plist */,
+			);
+			path = ArtvarkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BC43E432363CF020014F526 /* Artvark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC43E6E2363CF070014F526 /* Build configuration list for PBXNativeTarget "Artvark" */;
+			buildPhases = (
+				7BC43E402363CF020014F526 /* Sources */,
+				7BC43E412363CF020014F526 /* Frameworks */,
+				7BC43E422363CF020014F526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Artvark;
+			productName = Artvark;
+			productReference = 7BC43E442363CF020014F526 /* Artvark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BC43E592363CF060014F526 /* ArtvarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC43E712363CF070014F526 /* Build configuration list for PBXNativeTarget "ArtvarkTests" */;
+			buildPhases = (
+				7BC43E562363CF060014F526 /* Sources */,
+				7BC43E572363CF060014F526 /* Frameworks */,
+				7BC43E582363CF060014F526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BC43E5C2363CF060014F526 /* PBXTargetDependency */,
+			);
+			name = ArtvarkTests;
+			productName = ArtvarkTests;
+			productReference = 7BC43E5A2363CF060014F526 /* ArtvarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BC43E642363CF060014F526 /* ArtvarkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC43E742363CF070014F526 /* Build configuration list for PBXNativeTarget "ArtvarkUITests" */;
+			buildPhases = (
+				7BC43E612363CF060014F526 /* Sources */,
+				7BC43E622363CF060014F526 /* Frameworks */,
+				7BC43E632363CF060014F526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BC43E672363CF060014F526 /* PBXTargetDependency */,
+			);
+			name = ArtvarkUITests;
+			productName = ArtvarkUITests;
+			productReference = 7BC43E652363CF060014F526 /* ArtvarkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BC43E3C2363CF020014F526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Bag O";
+				TargetAttributes = {
+					7BC43E432363CF020014F526 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					7BC43E592363CF060014F526 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 7BC43E432363CF020014F526;
+					};
+					7BC43E642363CF060014F526 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 7BC43E432363CF020014F526;
+					};
+				};
+			};
+			buildConfigurationList = 7BC43E3F2363CF020014F526 /* Build configuration list for PBXProject "Artvark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BC43E3B2363CF020014F526;
+			productRefGroup = 7BC43E452363CF020014F526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BC43E432363CF020014F526 /* Artvark */,
+				7BC43E592363CF060014F526 /* ArtvarkTests */,
+				7BC43E642363CF060014F526 /* ArtvarkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BC43E422363CF020014F526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC43E542363CF060014F526 /* LaunchScreen.storyboard in Resources */,
+				7BC43E512363CF060014F526 /* Preview Assets.xcassets in Resources */,
+				7BC43E4E2363CF060014F526 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC43E582363CF060014F526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC43E632363CF060014F526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BC43E402363CF020014F526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC43E4A2363CF020014F526 /* ContentView.swift in Sources */,
+				7BC43E482363CF020014F526 /* AppDelegate.swift in Sources */,
+				7BC43E4C2363CF020014F526 /* Experience.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC43E562363CF060014F526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC43E5F2363CF060014F526 /* ArtvarkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC43E612363CF060014F526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC43E6A2363CF060014F526 /* ArtvarkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BC43E5C2363CF060014F526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC43E432363CF020014F526 /* Artvark */;
+			targetProxy = 7BC43E5B2363CF060014F526 /* PBXContainerItemProxy */;
+		};
+		7BC43E672363CF060014F526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC43E432363CF020014F526 /* Artvark */;
+			targetProxy = 7BC43E662363CF060014F526 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BC43E522363CF060014F526 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BC43E532363CF060014F526 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BC43E6C2363CF070014F526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BC43E6D2363CF070014F526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BC43E6F2363CF070014F526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Artvark/Preview Content\"";
+				DEVELOPMENT_TEAM = 7BVF2WQBW2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Artvark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bago.Artvark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BC43E702363CF070014F526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Artvark/Preview Content\"";
+				DEVELOPMENT_TEAM = 7BVF2WQBW2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Artvark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bago.Artvark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BC43E722363CF070014F526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BVF2WQBW2;
+				INFOPLIST_FILE = ArtvarkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bago.ArtvarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Artvark.app/Artvark";
+			};
+			name = Debug;
+		};
+		7BC43E732363CF070014F526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BVF2WQBW2;
+				INFOPLIST_FILE = ArtvarkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bago.ArtvarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Artvark.app/Artvark";
+			};
+			name = Release;
+		};
+		7BC43E752363CF070014F526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BVF2WQBW2;
+				INFOPLIST_FILE = ArtvarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bago.ArtvarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artvark;
+			};
+			name = Debug;
+		};
+		7BC43E762363CF070014F526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BVF2WQBW2;
+				INFOPLIST_FILE = ArtvarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bago.ArtvarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artvark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BC43E3F2363CF020014F526 /* Build configuration list for PBXProject "Artvark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC43E6C2363CF070014F526 /* Debug */,
+				7BC43E6D2363CF070014F526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC43E6E2363CF070014F526 /* Build configuration list for PBXNativeTarget "Artvark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC43E6F2363CF070014F526 /* Debug */,
+				7BC43E702363CF070014F526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC43E712363CF070014F526 /* Build configuration list for PBXNativeTarget "ArtvarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC43E722363CF070014F526 /* Debug */,
+				7BC43E732363CF070014F526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC43E742363CF070014F526 /* Build configuration list for PBXNativeTarget "ArtvarkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC43E752363CF070014F526 /* Debug */,
+				7BC43E762363CF070014F526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BC43E3C2363CF020014F526 /* Project object */;
+}

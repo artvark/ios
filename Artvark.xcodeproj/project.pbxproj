@@ -15,6 +15,10 @@
 		7BC43E542363CF060014F526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC43E522363CF060014F526 /* LaunchScreen.storyboard */; };
 		7BC43E5F2363CF060014F526 /* ArtvarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E5E2363CF060014F526 /* ArtvarkTests.swift */; };
 		7BC43E6A2363CF060014F526 /* ArtvarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E692363CF060014F526 /* ArtvarkUITests.swift */; };
+		7BC43E782363DEAE0014F526 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E772363DEAE0014F526 /* MainView.swift */; };
+		7BC43E7A2363E0FE0014F526 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E792363E0FE0014F526 /* MapView.swift */; };
+		7BC43E7C2363EBC90014F526 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E7B2363EBC90014F526 /* MapViewController.swift */; };
+		7BC43E7E2363F13A0014F526 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E7D2363F13A0014F526 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		7BC43E652363CF060014F526 /* ArtvarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtvarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC43E692363CF060014F526 /* ArtvarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtvarkUITests.swift; sourceTree = "<group>"; };
 		7BC43E6B2363CF060014F526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC43E772363DEAE0014F526 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7BC43E792363E0FE0014F526 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7BC43E7B2363EBC90014F526 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7BC43E7D2363F13A0014F526 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,15 @@
 			children = (
 				7BC43E472363CF020014F526 /* AppDelegate.swift */,
 				7BC43E492363CF020014F526 /* ContentView.swift */,
+				7BC43E772363DEAE0014F526 /* MainView.swift */,
+				7BC43E792363E0FE0014F526 /* MapView.swift */,
+				7BC43E7B2363EBC90014F526 /* MapViewController.swift */,
 				7BC43E4B2363CF020014F526 /* Experience.rcproject */,
 				7BC43E4D2363CF060014F526 /* Assets.xcassets */,
 				7BC43E522363CF060014F526 /* LaunchScreen.storyboard */,
 				7BC43E552363CF060014F526 /* Info.plist */,
 				7BC43E4F2363CF060014F526 /* Preview Content */,
+				7BC43E7D2363F13A0014F526 /* User.swift */,
 			);
 			path = Artvark;
 			sourceTree = "<group>";
@@ -268,8 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC43E4A2363CF020014F526 /* ContentView.swift in Sources */,
+				7BC43E7C2363EBC90014F526 /* MapViewController.swift in Sources */,
+				7BC43E782363DEAE0014F526 /* MainView.swift in Sources */,
+				7BC43E7A2363E0FE0014F526 /* MapView.swift in Sources */,
 				7BC43E482363CF020014F526 /* AppDelegate.swift in Sources */,
 				7BC43E4C2363CF020014F526 /* Experience.rcproject in Sources */,
+				7BC43E7E2363F13A0014F526 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

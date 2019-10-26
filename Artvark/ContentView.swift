@@ -11,6 +11,7 @@ import RealityKit
 
 struct ContentView : View {
     var body: some View {
+
         return ARViewContainer().edgesIgnoringSafeArea(.all)
     }
 }
@@ -31,7 +32,8 @@ struct ARViewContainer: UIViewRepresentable {
         
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
+    func updateUIView(_ uiView: ARView, context: Context) {
+    }
     
 }
 

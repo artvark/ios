@@ -7,16 +7,19 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct MainView: View {
+        
     var body: some View {
 
         ZStack{
-            MapView()
-            Text("Hello world")
+            MapView(locationManager: LocationManager())
+            Text("HEy")
         }
         
     }
+    
 }
 
 struct MainView_Previews: PreviewProvider {

@@ -2,28 +2,32 @@ import Foundation
 import CoreLocation
 import Combine
 
-class LocationManager: NSObject, ObservableObject {
+class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+    private let locationManager = CLLocationManager()
+    var objectWillChange = PassthroughSubject<LocationManager, Never>()
 
     override init() {
         super.init()
         self.locationManager.delegate = self
-    }
-    
-    func startUpdating() {
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
     }
-
-    @Published var locationStatus: CLAuthorizationStatus? {
-        willSet {
-            objectWillChange.send()
+    
+    func startUpdating() {
+        if statusString == "notDetermined" {
+            self.locationManager.requestWhenInUseAuthorization()
+        } else if statusString == "authorizedWhenInUse" {
+            self.locationManager.startUpdatingLocation()
         }
+        
+        print("here")
     }
 
-    @Published var lastLocation: CLLocation? {
-        willSet {
-            objectWillChange.send()
+    @Published var locationStatus: CLAuthorizationStatus? = nil
+    @Published var lastLocation = CLLocation(latitude: 37.32718130, longitude: -122.02684864) {
+        didSet {
+            objectWillChange.send(self)
         }
     }
 
@@ -42,25 +46,16 @@ class LocationManager: NSObject, ObservableObject {
         }
 
     }
-
-    let objectWillChange = PassthroughSubject<Void, Never>()
     
-    var location: CLLocation? { self.locationManager.location }
-
-    private let locationManager = CLLocationManager()
-}
-
-extension LocationManager: CLLocationManagerDelegate {
-
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         self.locationStatus = status
+        self.startUpdating()
         print(#function, statusString)
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else { return }
-        self.lastLocation = location
-        print(#function, location)
+        lastLocation = locations.last!
+        print(lastLocation)
     }
 
 }

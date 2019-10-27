@@ -4,7 +4,6 @@ import Combine
 
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     private let locationManager = CLLocationManager()
-    var objectWillChange = PassthroughSubject<LocationManager, Never>()
 
     override init() {
         super.init()
@@ -25,11 +24,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
 
     @Published var locationStatus: CLAuthorizationStatus? = nil
-    @Published var lastLocation = CLLocation(latitude: 37.32718130, longitude: -122.02684864) {
-        didSet {
-            objectWillChange.send(self)
-        }
-    }
+    @Published var lastLocation = CLLocation(latitude: 37.32718130, longitude: -122.02684864)
 
     var statusString: String {
         guard let status = locationStatus else {

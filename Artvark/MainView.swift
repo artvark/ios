@@ -10,12 +10,12 @@ import SwiftUI
 import CoreLocation
 
 struct MainView: View {
+    @ObservedObject var locationManager = LocationManager()
         
     var body: some View {
 
         ZStack{
-            MapView(locationManager: LocationManager())
-            Text("HEy")
+            MapView(location: $locationManager.lastLocation)
         }
         
     }

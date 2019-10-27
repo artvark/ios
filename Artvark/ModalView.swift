@@ -11,7 +11,8 @@ import SwiftUI
 
 struct ModalView: View {
     @Environment(\.presentationMode) var presentationMode
-    
+    @ObservedObject var locationManager = LocationManager()
+
     var body: some View {
             VStack{
                 Button(action: {
@@ -20,9 +21,7 @@ struct ModalView: View {
                 }) {
                     Text("Dismiss")
                 }
-                
-                MainView()
-                
+                MapView(location: $locationManager.lastLocation)
             }
         
        

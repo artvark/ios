@@ -49,6 +49,7 @@ struct DrawView: UIViewRepresentable {
         canvasView.delegate = context.coordinator
         canvasView.alwaysBounceVertical = false
         canvasView.allowsFingerDrawing = true
+//        canvasView.drawing
         canvasView.becomeFirstResponder()
         let window = UIApplication.shared.windows.last
         if window != nil {

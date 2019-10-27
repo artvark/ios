@@ -55,7 +55,7 @@ struct ContentView : View {
                 }.padding(EdgeInsets(top: 10, leading: 10, bottom: 30, trailing: 10))
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
             }.edgesIgnoringSafeArea(.all)
-        }
+        }.navigationBarHidden(true)
     }
 }
 

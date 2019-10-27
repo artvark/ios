@@ -15,16 +15,19 @@ struct ModalView: View {
 
     var body: some View {
             VStack{
-                Button(action: {
-                    print("dismisses form")
-                    self.presentationMode.wrappedValue.dismiss()
-                }) {
-                    Text("Dismiss")
-                }
+                HStack{
+                    Spacer().frame(width: 55)
+                    Text(verbatim: "Map-o-Art").frame(minWidth: 0, maxWidth: .infinity, alignment: .center).font(.title)
+                    Button(action: {
+                        print("dismisses form")
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Text("Done")
+                    }
+                }.padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+                Spacer()
                 MapView(location: $locationManager.lastLocation)
-            }
-        
-       
+            }.edgesIgnoringSafeArea(.bottom)
     }
 }
 

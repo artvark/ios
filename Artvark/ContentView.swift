@@ -10,9 +10,22 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+    @State private var show_modal: Bool = false
+    
     var body: some View {
-
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        
+        ZStack{
+            ARViewContainer().edgesIgnoringSafeArea(.all)
+            
+            Button(action: {
+                print("Button Pushed")
+                self.show_modal = true
+            }) {
+                Text("Show Modal")
+            }.sheet(isPresented: self.$show_modal) {
+                ModalView()
+            }
+        }
     }
 }
 

@@ -44,7 +44,6 @@ struct MapView: UIViewRepresentable {
     func updateUIView(_ view: MKMapView, context: Context) {
         
         if (location != nil) {
-            print("Updating Location")
             let coordinate: CLLocationCoordinate2D = location.coordinate
                    
             view.mapType = MKMapType.standard

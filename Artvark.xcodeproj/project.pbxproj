@@ -20,6 +20,7 @@
 		7BC43E7C2363EBC90014F526 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E7B2363EBC90014F526 /* MapViewController.swift */; };
 		7BC43E7E2363F13A0014F526 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E7D2363F13A0014F526 /* User.swift */; };
 		B471856A2364B85E00BFCD62 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47185692364B85E00BFCD62 /* LocationManager.swift */; };
+		B4D5A3AB23652477008F687D /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D5A3AA23652477008F687D /* ModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		7BC43E7B2363EBC90014F526 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7BC43E7D2363F13A0014F526 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B47185692364B85E00BFCD62 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B4D5A3AA23652477008F687D /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				7BC43E772363DEAE0014F526 /* MainView.swift */,
 				7BC43E792363E0FE0014F526 /* MapView.swift */,
 				7BC43E7B2363EBC90014F526 /* MapViewController.swift */,
+				B4D5A3AA23652477008F687D /* ModalView.swift */,
 				7BC43E4B2363CF020014F526 /* Experience.rcproject */,
 				7BC43E4D2363CF060014F526 /* Assets.xcassets */,
 				7BC43E522363CF060014F526 /* LaunchScreen.storyboard */,
@@ -288,6 +291,7 @@
 				7BC43E7A2363E0FE0014F526 /* MapView.swift in Sources */,
 				B471856A2364B85E00BFCD62 /* LocationManager.swift in Sources */,
 				7BC43E482363CF020014F526 /* AppDelegate.swift in Sources */,
+				B4D5A3AB23652477008F687D /* ModalView.swift in Sources */,
 				7BC43E4C2363CF020014F526 /* Experience.rcproject in Sources */,
 				7BC43E7E2363F13A0014F526 /* User.swift in Sources */,
 			);

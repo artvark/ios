@@ -12,12 +12,13 @@ import SwiftUI
 struct ModalView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var locationManager = LocationManager()
-
+    let gesture = DragGesture()
+    
     var body: some View {
             VStack{
                 HStack{
-                    Spacer().frame(width: 55)
-                    Text(verbatim: "Map-o-Art").frame(minWidth: 0, maxWidth: .infinity, alignment: .center).font(.title)
+                    Spacer().fixedSize().frame(width: 55.0)
+                    Text("Map O' Art").frame(minWidth: 0, maxWidth: .infinity, alignment: .center).font(.title)
                     Button(action: {
                         print("dismisses form")
                         self.presentationMode.wrappedValue.dismiss()
@@ -26,7 +27,7 @@ struct ModalView: View {
                     }
                 }.padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
                 Spacer()
-                MapView(location: $locationManager.lastLocation)
+                MapView().highPriorityGesture(gesture)
             }.edgesIgnoringSafeArea(.bottom)
     }
 }

@@ -15,9 +15,7 @@
 		7BC43E542363CF060014F526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC43E522363CF060014F526 /* LaunchScreen.storyboard */; };
 		7BC43E5F2363CF060014F526 /* ArtvarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E5E2363CF060014F526 /* ArtvarkTests.swift */; };
 		7BC43E6A2363CF060014F526 /* ArtvarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E692363CF060014F526 /* ArtvarkUITests.swift */; };
-		7BC43E782363DEAE0014F526 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E772363DEAE0014F526 /* MainView.swift */; };
 		7BC43E7A2363E0FE0014F526 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E792363E0FE0014F526 /* MapView.swift */; };
-		7BC43E7C2363EBC90014F526 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E7B2363EBC90014F526 /* MapViewController.swift */; };
 		7BC43E7E2363F13A0014F526 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E7D2363F13A0014F526 /* User.swift */; };
 		7BC43E8223654B840014F526 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E8123654B840014F526 /* DrawView.swift */; };
 		7BC43E84236550220014F526 /* CanvasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC43E83236550220014F526 /* CanvasManager.swift */; };
@@ -57,9 +55,7 @@
 		7BC43E652363CF060014F526 /* ArtvarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtvarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC43E692363CF060014F526 /* ArtvarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtvarkUITests.swift; sourceTree = "<group>"; };
 		7BC43E6B2363CF060014F526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BC43E772363DEAE0014F526 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7BC43E792363E0FE0014F526 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		7BC43E7B2363EBC90014F526 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7BC43E7D2363F13A0014F526 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7BC43E8123654B840014F526 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		7BC43E83236550220014F526 /* CanvasManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasManager.swift; sourceTree = "<group>"; };
@@ -117,12 +113,10 @@
 			children = (
 				7BC43E472363CF020014F526 /* AppDelegate.swift */,
 				7BC43E492363CF020014F526 /* ContentView.swift */,
-				7BC43E772363DEAE0014F526 /* MainView.swift */,
 				7BC43E792363E0FE0014F526 /* MapView.swift */,
 				B47185692364B85E00BFCD62 /* LocationManager.swift */,
 				7BC43E8123654B840014F526 /* DrawView.swift */,
 				7BC43E83236550220014F526 /* CanvasManager.swift */,
-				7BC43E7B2363EBC90014F526 /* MapViewController.swift */,
 				B4D5A3AA23652477008F687D /* ModalView.swift */,
 				7BC43E4B2363CF020014F526 /* Experience.rcproject */,
 				7BC43E4D2363CF060014F526 /* Assets.xcassets */,
@@ -292,8 +286,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC43E4A2363CF020014F526 /* ContentView.swift in Sources */,
-				7BC43E7C2363EBC90014F526 /* MapViewController.swift in Sources */,
-				7BC43E782363DEAE0014F526 /* MainView.swift in Sources */,
 				7BC43E7A2363E0FE0014F526 /* MapView.swift in Sources */,
 				B471856A2364B85E00BFCD62 /* LocationManager.swift in Sources */,
 				7BC43E482363CF020014F526 /* AppDelegate.swift in Sources */,
@@ -468,7 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Artvark/Preview Content\"";
-				DEVELOPMENT_TEAM = 7BVF2WQBW2;
+				DEVELOPMENT_TEAM = 8KU4H2QX3B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Artvark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

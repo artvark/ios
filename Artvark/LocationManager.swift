@@ -1,8 +1,9 @@
 import Foundation
 import CoreLocation
 import Combine
+import MapKit
 
-class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate, MKMapViewDelegate {
     private let locationManager = CLLocationManager()
 
     override init() {
@@ -24,7 +25,8 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
 
     @Published var locationStatus: CLAuthorizationStatus? = nil
-    @Published var lastLocation = CLLocation(latitude: 37.32718130, longitude: -122.02684864)
+    // @Published var lastLocation = MKUserLocation()
+    // @Published var lastLocation = CLLocation(latitude: 37.32718130, longitude: -122.02684864)
 
     var statusString: String {
         guard let status = locationStatus else {
@@ -49,8 +51,12 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        lastLocation = locations.last!
+        //lastLocation = locations.last!
         //print(lastLocation)
+    }
+    
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        // lastLocation = userLocation
     }
 
 }

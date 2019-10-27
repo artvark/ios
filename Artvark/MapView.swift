@@ -1,5 +1,5 @@
 //
-//  MapView.swift
+//  MainView.swift
 //  Artvark
 //
 //  Created by Taabish Kathawala on 10/25/19.
@@ -10,58 +10,69 @@ import SwiftUI
 import MapKit
 import CoreLocation
 
-
-struct MapView: UIViewRepresentable {
-    @Binding var location: CLLocation
+struct MapView: View {
+    @ObservedObject var locationManager = LocationManager()
     
-    var userLatitude: String {
-        return "\(location.coordinate.latitude)"
-    }
+    var body: some View {
 
-    var userLongitude: String {
-        return "\(location.coordinate.longitude)"
+        ZStack{
+            //MapViewRepresentable(location: $locationManager.lastLocation)
+            MapViewRepresentable()
+        }
+        
     }
+    
+}
+
+struct MapViewRepresentable: UIViewRepresentable {
+//    @Binding var location: CLLocation
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
 
     final class Coordinator: NSObject, MKMapViewDelegate {
-        var control: MapView
+        var control: MapViewRepresentable
 
-        init(_ control: MapView) {
+        init(_ control: MapViewRepresentable) {
             self.control = control
         }
+        
     }
     
     func makeUIView(context: Context) -> MKMapView {
         let map = MKMapView()
         map.delegate = context.coordinator
         map.showsUserLocation = true
+        map.showsCompass = true
+        
+        let button = MKUserTrackingButton(mapView: map)
+        button.layer.backgroundColor = UIColor(white: 1, alpha: 1).cgColor
+        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.borderWidth = 0
+        button.layer.cornerRadius = 5
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        map.addSubview(button)
+        
+        NSLayoutConstraint.activate([
+            button.topAnchor.constraint(equalTo: map.layoutMarginsGuide.topAnchor, constant: 45),
+            button.trailingAnchor.constraint(equalTo: map.layoutMarginsGuide.trailingAnchor, constant: -3),
+        ])
+        
+        map.setUserTrackingMode(MKUserTrackingMode.followWithHeading, animated: true)
         return map
     }
     
     func updateUIView(_ view: MKMapView, context: Context) {
-        
-        if (location != nil) {
-            let coordinate: CLLocationCoordinate2D = location.coordinate
-                   
-            view.mapType = MKMapType.standard
-            let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta:0.02)
-            let region = MKCoordinateRegion(center: coordinate, span: span)
-            view.setRegion(region, animated: true)
-        } else {
-            print("No Location")
-        }
+        view.setUserTrackingMode(MKUserTrackingMode.followWithHeading, animated: true)
        
     }
     
-    
 }
 
-//struct MapView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MapView(locationManager: LocationManager())
-//    }
-//}
-
+struct MapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapView()
+    }
+}

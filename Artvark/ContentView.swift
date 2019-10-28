@@ -20,19 +20,22 @@ struct ContentView : View {
 
         NavigationView{
             ZStack{
-                ARViewContainer()
+//                ARViewContainer()
                 VStack{
                     Spacer()
-                    NavigationLink(destination: DrawView(), tag: 1, selection: $action) {
+                    NavigationLink(destination: Draw(), tag: 1, selection: $action) {
                         EmptyView()
                     }
+                    .navigationBarTitle("")
+                    .navigationBarHidden(true)
+                    .navigationBarBackButtonHidden(true)
                     HStack{
                         Spacer()
                         Button(action: {
                             print ("Button pushed")
                             self.show_map_modal = true
                         }) {
-                            Image("map")
+                            Image(systemName: "map")
                                 .resizable()
                                 .frame(width: 32.0, height: 32.0)
                                 .padding()
@@ -49,7 +52,7 @@ struct ContentView : View {
                         Button(action: {
                             print ("Button pushed")
                         }) {
-                            Image("highlighter")
+                            Image(systemName: "pencil.and.outline")
                                 .resizable()
                                 .frame(width: 32.0, height: 32.0)
                                 .padding()

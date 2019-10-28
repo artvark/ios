@@ -49,7 +49,7 @@ struct DrawView: UIViewRepresentable {
         canvasView.delegate = context.coordinator
         canvasView.alwaysBounceVertical = false
         canvasView.allowsFingerDrawing = true
-//        canvasView.drawing
+//        canvasView.drawing = PKDrawing
         canvasView.becomeFirstResponder()
         let window = UIApplication.shared.windows.last
         if window != nil {
@@ -71,5 +71,27 @@ struct DrawView: UIViewRepresentable {
 struct DrawView_Previews: PreviewProvider {
     static var previews: some View {
         DrawView()
+    }
+}
+
+struct Draw: View {
+    @Environment(\.presentationMode) var presentationMode
+
+    var body: some View {
+        VStack{
+            HStack{
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(systemName: "chevron.left")
+                        .resizable()
+                        .frame(width: 10.0, height: 20.0)
+                        .padding(EdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 15))
+                }
+                Spacer()
+            }.padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+            DrawView()
+        }.edgesIgnoringSafeArea(.bottom)
+
     }
 }
